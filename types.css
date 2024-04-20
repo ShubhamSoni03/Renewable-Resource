@@ -1,0 +1,132 @@
+/* types.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
+    background-color: beige; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #008000; /* Green headings */
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.primary-button, .secondary-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    font-size: 16px;
+}
+
+.primary-button {
+    background-color: #008000; /* Green button background */
+}
+
+.primary-button:hover {
+    background-color: #006400; /* Darker green on hover */
+}
+
+.secondary-button {
+    background-color: #4169E1; /* Blue button background */
+}
+
+.secondary-button:hover {
+    background-color: #1E90FF; /* Darker blue on hover */
+}
+
+.link {
+    color: #1E90FF; /* Blue links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #4169E1; /* Darker blue on hover */
+}
+
+.container {
+    padding: 20px;
+    margin: 20px;
+}
+
+header {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    margin: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a.active {
+    color: goldenrod; /* Golden color for the active page */
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: beige;
+}
+
+.energy-img {
+    width: 100%;
+    max-width: 100px; /* Control size of images */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Center images horizontally */
+}
+
+.type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.type-description {
+    flex: 1;
+    padding: 20px;
+}
+
+.type img {
+    flex: 100px; /* Prevents resizing beyond specified width */
+    margin-right: 20px;
+}
+
+@media (max-width: 100px) {
+    .type {
+        flex-direction: row;
+    }
+}
